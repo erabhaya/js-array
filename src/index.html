@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays Assignment</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+      <div>
+        <select id="sort" >
+          <option>-Sort-</option>
+          <option value="ascending">Ascending</option>
+          <option value="descending">Descending</option>
+        </select>
+        <select id="sortby" >
+          <option>-Sort By-</option>
+          <option value="company">Company</option>
+          <option value="model">Model</option>
+          <option value="mem">Memory</option>
+          <option value="price">Price</option>
+        </select>
+        <button onclick="sort()">Sort</button>
+      </div>
+      <div class="container">
+        <label for="Company">Company :</label>
+        <input type="text" id="company" name="Company" /><br /><br />
+
+        <label for="model">Model :</label>
+        <input type="text" id="model" name="Model" /><br /><br />
+
+        <label for="memory">Memory :</label>
+        <input type="text" id="memory" name="Memory" /><br /><br />
+
+        <label for="price">Price :</label>
+        <input type="number" id="price" name="Price" /><br /><br />
+
+        <label for="quantity">Quantity :</label>
+        <input type="number" id="quantity" name="Quantity" /><br /><br />
+
+        <button id="btn" onclick="add()">ADD</button>
+      </div>
+      <div id="table">
+        <table id="table1">
+          <tr>
+            <th id="comp"></th>
+            <th id="model"></th>
+            <th id="memory"></th>
+            <th id="price"></th>
+          </tr>
+        </table>
+        <div class="btn"><button onclick="delFun()">Delete</button></div>
+      </div>
+      <div class="bill">
+        <select id="bill"  >
+          <option>--Select Product--</option>
+          <option id="opt"></option>
+          
+        <input type="number" id="quantityy" placeholder="quantity" />
+        <button >ADD</button>
+        <button onclick="add_cart()">Generate Bill</button>
+      </div>
+      <div id="kind">
+        <select id="sort" >
+          <option>-Sort-</option>
+          <option value="ascending">Ascending</option>
+          <option value="descending">Descending</option>
+        </select>
+        <select id="sortby" >
+          <option>-Sort By-</option>
+          <option value="company">Company</option>
+          <option value="model">Model</option>
+          <option value="mem">Memory</option>
+          <option value="price">Price</option>
+        </select>
+        <button onclick="sort()">Sort</button>
+      </div>
+      <div>
+        <table id="table2">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <select id="Item" onchange="upFun()">
+          <option>--Select Options--</option>
+        </select>
+        <input type="number" placeholder="quantity" id="new">
+        <button onclick="updateItems()">Update</button>
+      </div>
+      <div class="rating">
+        <strong>Rate Us:</strong>
+        <select id="sel">
+          <option>--Select Options--</option>
+        </select>
+        <select id="rates">
+          <option selected></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <button onclick="rateFun()">Rate</button>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-color: aqua;
+}
+table{
+    width: 50%;
+    padding: 4%;
+    text-align: center;
+    
+}
+ td{
+    margin: 2%;
+    padding: 2%;
+    border-bottom: 2px solid black;
+}
+.container{
+    padding: 3%;
+}
+.btn{
+    /* padding: 1%; */
+    margin-left: 20%;
+    margin-top: -3%;
+   
+}
+.rating{
+    padding-top: 5%;
+}
+
+#kind{
+    margin-left: 5%;
+}
